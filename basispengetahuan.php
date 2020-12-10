@@ -34,16 +34,16 @@ include "session.php";
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="homeadmin.php">BERANDA</a>
+            <a href="index.php"><i class="fas fa-home"></i> BERANDA</a>
           </li>
           <li>
-            <a href="hamadanpenyakit.php">HAMA & PENYAKIT</a>
+            <a href="diagnosa.php"><i class="fas fa-flask"></i> DIAGNOSA PENYAKIT</a>
           </li>
           <li>
-            <a href="gejala.php">GEJALA</a>
+            <a href="daftarpenyakit.php"><i class="fas fa-book-open"></i> DAFTAR PENYAKIT</a>
           </li>
           <li>
-            <a href="basispengetahuan.php">BASIS PENGETAHUAN</a>
+            <a href="about.php"><i class="fas fa-address-card"></i> TENTANG</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
