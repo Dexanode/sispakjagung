@@ -1,8 +1,8 @@
 <?php  
 //membuat koneksi ke database  
-  $host = 'localhost';  
+$host = 'localhost';  
   $user = 'sispak';        
-  $password = 'mnNEtQXDjHEzCYGT';        
+  $password = 'VNmQHcivu7lTvJaW';        
   $database = 'sbp';    
       
   $konek_db = mysqli_connect($host, $user, $password, $database);      

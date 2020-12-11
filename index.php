@@ -17,7 +17,6 @@ header("location: about.php");
   <link rel="stylesheet" href="css/style.css">
   <script src="Js/jquery-2.2.3.min.js"></script>
   <script src="Js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="fontawesome550/css/all.css">
 </head>
 
 <body>
@@ -34,21 +33,21 @@ header("location: about.php");
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="index.php"><i class="fas fa-home"></i> BERANDA</a>
+            <a href="index.php">BERANDA</a>
           </li>
           <li>
-            <a href="diagnosa.php"><i class="fas fa-flask"></i> DIAGNOSA PENYAKIT</a>
+            <a href="diagnosa.php">DIAGNOSA PENYAKIT</a>
           </li>
           <li>
-            <a href="daftarpenyakit.php"><i class="fas fa-book-open"></i> DAFTAR PENYAKIT</a>
+            <a href="daftarpenyakit.php">DAFTAR PENYAKIT</a>
           </li>
           <li>
-            <a href="about.php"><i class="fas fa-address-card"></i> TENTANG</a>
+            <a href="about.php">TENTANG</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#" id="myBtn" class="text-primary">LOGIN  <i class="fas fa-sign-in-alt"></i></a>
+            <a href="#" id="myBtn" class="text-primary">LOGIN</a>
           </li>
         </ul>
       </div>
@@ -64,8 +63,16 @@ header("location: about.php");
   </div></center>
 </div>
   <div class="container">
-  <p align=justify>Jagung merupakan salah satu komoditas unggulan pertanian dari sub sektor tanaman pangan yang multi guna dan bernilai strategis untuk dikembangkan. Pada saat ini, jagung tidak hanya dimanfaatkan untuk bahan pangan (food) saja tetapi juga untuk pakan ternak (feed), dan juga bahan bakar (fuel). Jumlah produksi, produktivitas dan harga jagung selalu mengalami fluktuasi karena pengaruh jumlah permintaan dan penawaran yang selalu berubah ubah. Tingginya permintaan jagung di pasar domestik merupakan salah satu peluang bagi Indonesia untuk menyeimbangkan antara jumlah permintaan dan penawaran jagung. Adapun cara yang dapat ditempuh untuk mewujudkan keseimbangan permintaan dan penawaran jagung domestik adalah dengan memproduksi jagung sendiri di dalam negeri dengan menggunakan sumber daya domestik atau dengan melakukan impor jagung dari negara lain (Maharani, 2014).
-</p>
+  <p align=justify>Di Indonesia tanaman bawang dan cabai adalah salah satu jenis tanaman hortikultura yang
+              secara luas dibudidayakan. Akan tetapi, jika dilihat dari hasil panen yang dihasilkan masih belum
+              memuaskan. Hal ini disebabkan oleh berbagai faktor, diantaranya yaitu teknik budidaya, kondisi lingkungan
+              dan hama penyakit. Dari ketiga faktor, faktor yang paling bermasalah sampai saat ini adalah hama dan
+              penyakit.Masalahnya sering ditemui bahwa petani yang minim akan pengetahuaan mengenai penyakit yang
+              menyerang tanaman mereka, ditambah lagi keterbatasan seorang ahli kadang-kadang menjadi kendala bagi
+              petani yang akan melakukan konsultasi untuk menyelesaikan masalah dan mendapatkan solusi terbaik.
+              Diharapka sistem pakar simulasi diagnosa hama dan penyakit tanaman bawang dan cabai dibuat bertujuan untuk
+              sebagai sarana konsultasi, sarana belajar di suatu instansi dan dapat digunakan sebagai alat yang
+              digunakan untuk mendiagnosa dan mensosialisasikan jenis hama dan penyakit.</p>
   </div>
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">

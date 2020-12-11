@@ -27,16 +27,16 @@ include "session.php";
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="index.php"><i class="fas fa-home"></i> BERANDA</a>
+            <a href="homeadmin.php">BERANDA</a>
           </li>
           <li>
-            <a href="diagnosa.php"><i class="fas fa-flask"></i> DIAGNOSA PENYAKIT</a>
+            <a href="hamadanpenyakit.php">HAMA & PENYAKIT</a>
           </li>
           <li>
-            <a href="daftarpenyakit.php"><i class="fas fa-book-open"></i> DAFTAR PENYAKIT</a>
+            <a href="gejala.php">GEJALA</a>
           </li>
           <li>
-            <a href="about.php"><i class="fas fa-address-card"></i> TENTANG</a>
+            <a href="basispengetahuan.php">BASIS PENGETAHUAN</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -64,7 +64,7 @@ include "session.php";
 				<select class="form-control" name="penyakit">
 				<option>Hama / Penyakit</option>
                <?php 
- 			        $tampil="SELECT * from penyakit where jenistanaman= \"".$_POST['tanaman']."\"";
+ 			        $tampil="select * from penyakit where jenistanaman= \"".$_POST['tanaman']."\"";
 			        $query1= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query1)){  
 					echo "<option value='".$hasil['namapenyakit']."'>".$hasil['idpenyakit']." ".$hasil['namapenyakit']."</option>";
@@ -80,12 +80,12 @@ include "session.php";
  			<?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
- 			$tampil="SELECT * from gejala where daerah='akar' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='akar' and jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
 			}
-      }
+                  }
 					?>
         <br>
             </div>
@@ -96,7 +96,7 @@ include "session.php";
  			<?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
- 			$tampil="SELECT * from gejala where daerah='batang' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='batang' and jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -111,7 +111,7 @@ include "session.php";
  			<?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
- 			$tampil="SELECT * from gejala where daerah='daun' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='daun' and jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -126,7 +126,7 @@ include "session.php";
  			<?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
- 			$tampil="SELECT * from gejala where daerah='Buah/Umbi' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='Buah/Umbi' and jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -141,7 +141,7 @@ include "session.php";
  			<?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
- 			$tampil="SELECT * from gejala where daerah='bunga' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='bunga' and jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
@@ -156,7 +156,7 @@ include "session.php";
  			<?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
- 			$tampil="SELECT * from gejala where daerah='biji' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where daerah='biji' and jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";

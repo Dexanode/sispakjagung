@@ -30,16 +30,16 @@ header("location: about.php");
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="index.php"><i class="fas fa-home"></i> BERANDA</a>
+            <a href="index.php">BERANDA</a>
           </li>
           <li>
-            <a href="diagnosa.php"><i class="fas fa-flask"></i> DIAGNOSA PENYAKIT</a>
+            <a href="diagnosa.php">DIAGNOSA PENYAKIT</a>
           </li>
           <li>
-            <a href="daftarpenyakit.php"><i class="fas fa-book-open"></i> DAFTAR PENYAKIT</a>
+            <a href="daftarpenyakit.php">DAFTAR PENYAKIT</a>
           </li>
           <li>
-            <a href="about.php"><i class="fas fa-address-card"></i> TENTANG</a>
+            <a href="about.php">TENTANG</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
