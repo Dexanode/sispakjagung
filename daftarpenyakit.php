@@ -59,8 +59,7 @@ header("location: about.php");
       <label for="sel1">Jenis Tanaman</label>
       <select class="form-control" name="tanaman" onChange='this.form.submit();'>
         <option>Tanaman</option>
-        <option>Bawang</option>
-        <option>Cabai</option>
+        <option>Jagung</option>
       </select>
     </form>
 

@@ -59,8 +59,7 @@ header("location: about.php");
 				<label for="sel1">Jenis Tanaman</label>            
 				<select class="form-control" name="tanaman" onChange='this.form.submit();'>
 				<option>Tanaman</option>
-                <option>Bawang</option>
-                <option>Cabai</option>
+                <option>Jagung</option>
   		</select>
   </form>
 <br>
@@ -74,9 +73,8 @@ header("location: about.php");
                         <tr>
                             <th>NO</th>
                             <th>ID Gejala</th>
-							<th>Gejala</th>
+							              <th>Gejala</th>
                             <th>Daerah</th>
-                            <th>Jenis Tanaman</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
@@ -91,10 +89,10 @@ while ($data = mysqli_fetch_array ($hasil)){
  			echo "      
         			<tr>  
         			<td>".$id."</td>
-					<td>".$data[0]."</td>  
+				    	<td>".$data[0]."</td>  
         			<td>".$data[1]."</td>  
         			<td>".$data[2]."</td>
-                    <td>".$data[3]."</td>
+                
                     <td><a href=\"aeditgejala.php?id=".$data[0]."\"><i class='glyphicon glyphicon-pencil'></i></a>"." || <a href=\"adeletegejala.php?id=".$data[0]."\"  onclick='return checkDelete()'><i class='glyphicon glyphicon-trash'></i></a>"."</td>
         		</tr>   
         	";      

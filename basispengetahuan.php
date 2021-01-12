@@ -62,8 +62,7 @@ include "session.php";
       <label for="sel1">Jenis Tanaman</label>
       <select class="form-control" name="tanaman" onChange='this.form.submit();'>
         <option>Tanaman</option>
-        <option>Bawang</option>
-        <option>Cabai</option>
+        <option>Jagung</option>
       </select>
     </form>
     <br>
@@ -90,18 +89,15 @@ include "session.php";
                     $id = 0;
                         
 while ($data = mysqli_fetch_array ($hasil)){  
- 			$id++; 
- 			echo "      
-        			<tr>  
-        			<td>".$id."</td>
-					<td>".$data['idpenyakit']."</td>  
-        			<td>".$data['namapenyakit']."</td>  
-                    <td>".$data['gejala']."</td>
-                    <td><a href=\"adeletebasispengetahuan.php?id=".$data['namapenyakit']."\"  onclick='return checkDelete()'><i class='glyphicon glyphicon-trash'></i></a></td>
-                   
-        		</tr>   
-        	";      
-			
+      $id++; 
+      echo "      
+              <tr>  
+                <td>".$id."</td>
+                <td>".$data['idpenyakit']."</td>  
+                <td>".$data['namapenyakit']."</td>  
+                <td>".$data['gejala']."</td>
+                <td><a href=\"adeletebasispengetahuan.php?id=".$data['namapenyakit']."\"  onclick='return checkDelete()'><i class='glyphicon glyphicon-trash'></i></a></td>
+              </tr>";      
                     }
                 }
  ?>

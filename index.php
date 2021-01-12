@@ -54,7 +54,7 @@ header("location: about.php");
     </div>
   </nav>
 
-<div class="jumbotron" style="background-image:url(img/bg1.jpg);background-size:cover;">
+<div class="jumbotron" style="background-image:url(img/corn.jpg);background-size:cover;">
 <center><img src="img/unpak.png" width="10%" alt="" srcset="">
   <div class="container">
     <h2 align="center" style="color:white">SISTEM PAKAR </h2>

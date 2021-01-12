@@ -83,7 +83,6 @@
             dan penyakit tanaman bawang dan cabai dibuat bertujuan untuk sebagai sarana konsultasi, sarana belajar di
             suatu instansi dan dapat digunakan sebagai alat yang digunakan untuk mendiagnosa dan mensosialisasikan jenis
             hama dan penyakit.</p>
-            <center><a href="https://blogbugabagi.blogspot.com" target="_blank" class="btn btn-danger">More Source Code</a></center>
         </div>
       </div>
     </div>
