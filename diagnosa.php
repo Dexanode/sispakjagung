@@ -16,6 +16,7 @@ header("location: about.php");
   <link rel="stylesheet" href="css/style.css">
   <script src="Js/jquery-2.2.3.min.js"></script>
   <script src="Js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="fontawesome550/css/all.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@ header("location: about.php");
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="index.php">BERANDA</a>
+            <a href="index.php"><i class="fas fa-home"></i></a>
           </li>
           <li>
             <a href="diagnosa.php">DIAGNOSA PENYAKIT</a>
@@ -67,7 +68,6 @@ header("location: about.php");
     </form>
     <br>
     <form id="form2" name="form2" method="post" action="diagnosa.php">
-     
       <?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){

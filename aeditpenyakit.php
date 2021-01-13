@@ -17,6 +17,7 @@ header("location: about.php");
    <link rel="stylesheet" href="css/style.css">
    <script src="Js/jquery-2.2.3.min.js"></script>
    <script src="Js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="fontawesome550/css/all.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@ header("location: about.php");
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="homeadmin.php">BERANDA</a>
+            <a href="homeadmin.php"><i class="fas fa-home"></i></a>
           </li>
           <li>
             <a href="hamadanpenyakit.php">HAMA & PENYAKIT</a>
@@ -113,7 +114,7 @@ header("location: about.php");
                </div>
             </div>
             <div class="form-group">
-               <br><label class="control-label col-sm-2">KULTUR TEKNIS :</label><br>
+               <br><label class="control-label col-sm-2">SOLUSI :</label><br>
                <div class="col-sm-10">
                   <?php
                        $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
@@ -125,45 +126,7 @@ header("location: about.php");
                 ?>
                </div>
             </div>
-            <div class="form-group">
-               <br><label class="control-label col-sm-2">FISIK MEKANIS :</label><br>
-               <div class="col-sm-10">
-                  <?php
-                       $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
-                       $sql = mysqli_query ($konek_db,$tampil);
-                       while($data = mysqli_fetch_array ($sql))
-                    {
-                       echo "<textarea rows='8' class='form-control' id='fisikmekanis' name='fisikmekanis'>".$data['fisikmekanis']."</textarea><br>";
-                    }
-                ?>
-               </div>
-            </div>
-            <div class="form-group">
-               <br><label class="control-label col-sm-2">KIMIAWI :</label><br>
-               <div class="col-sm-10">
-                  <?php
-                       $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
-                       $sql = mysqli_query ($konek_db,$tampil);
-                       while($data = mysqli_fetch_array ($sql))
-                    {
-                       echo "<textarea  rows='8' class='form-control' id='kimiawi' name='kimiawi'>".$data['kimiawi']."</textarea><br>";
-                    }
-                ?>
-               </div>
-            </div>
-            <div class="form-group">
-               <br><label class="control-label col-sm-2">HAYATI :</label><br>
-               <div class="col-sm-10">
-                  <?php
-                       $tampil = "SELECT * FROM penyakit where idpenyakit='".$_GET['id']."'";
-                       $sql = mysqli_query ($konek_db,$tampil);
-                       while($data = mysqli_fetch_array ($sql))
-                    {
-                       echo "<textarea rows='8' class='form-control' id='hayati' name='hayati'>".$data['hayati']."</textarea><br>";
-                    }
-                ?>
-               </div>
-            </div>
+           
             <button type="submit" name="submit" class="btn btn-primary">Simpan</button>
             <?php
                     if(isset($_POST['submit'])){

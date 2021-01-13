@@ -13,6 +13,7 @@ include "session.php";
   <link rel="stylesheet" href="css/style.css">
   <script src="Js/jquery-2.2.3.min.js"></script>
   <script src="Js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="fontawesome550/css/all.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@ include "session.php";
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="homeadmin.php">BERANDA</a>
+            <a href="homeadmin.php"><i class="fas fa-home"></i></a>
           </li>
           <li>
             <a href="hamadanpenyakit.php">HAMA & PENYAKIT</a>
@@ -49,19 +50,20 @@ include "session.php";
       </div>
     </div>
   </nav>
+
   <div class="container">
     <div class="col-sm-12 text-left">
     <div class="jumbotron">
       <center>
-        <h2>SISTEM PAKAR DIAGNOSA</h2>
+        <h2>PENERAPAN METODE BAYES UNTUK IDENTIFIKASI</h2>
         <h3>PENYAKIT TANAMAN JAGUNG</h3>
       <p>Selamat datang <?php echo $login_session; ?></p>
       <br>
+       <img src="img/unpak.png" width="12%" alt="" srcset="">
     </div>
     </center>
     <center>
   
-    <img src="img/unpak.png" width="12%" alt="" srcset="">
 
     </center>
     </div>

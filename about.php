@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="Js/jquery-2.2.3.min.js"></script>
   <script src="Js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="fontawesome550/css/all.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="index.php">BERANDA</a>
+            <a href="index.php"><i class="fas fa-home"></i></a>
           </li>
           <li>
             <a href="diagnosa.php">DIAGNOSA PENYAKIT</a>
@@ -57,7 +58,7 @@
         <div class="panel-heading">Dibuat Oleh :</div>
         <div class="panel-body text-left">
           Muhamad Ridwan Sidik<br>
-          0651 13 064<br>
+          0651 13 061<br>
           Fakultas MIPA<br>
           Ilmu Komputer<br>
         </div>
@@ -73,16 +74,7 @@
       <div class="panel panel-success">
         <div class="panel-heading">Introduce:</div>
         <div class="panel-body">
-          <p>Di Indonesia tanaman bawang dan cabai adalah salah satu jenis tanaman hortikultura yang secara luas
-            dibudidayakan. Akan tetapi, jika dilihat dari hasil panen yang dihasilkan masih belum memuaskan. Hal ini
-            disebabkan oleh berbagai faktor, diantaranya yaitu teknik budidaya, kondisi lingkungan dan hama penyakit.
-            Dari ketiga faktor, faktor yang paling bermasalah sampai saat ini adalah hama dan penyakit.Masalahnya sering
-            ditemui bahwa petani yang minim akan pengetahuaan mengenai penyakit yang menyerang tanaman mereka, ditambah
-            lagi keterbatasan seorang ahli kadang-kadang menjadi kendala bagi petani yang akan melakukan konsultasi
-            untuk menyelesaikan masalah dan mendapatkan solusi terbaik. Diharapka sistem pakar simulasi diagnosa hama
-            dan penyakit tanaman bawang dan cabai dibuat bertujuan untuk sebagai sarana konsultasi, sarana belajar di
-            suatu instansi dan dapat digunakan sebagai alat yang digunakan untuk mendiagnosa dan mensosialisasikan jenis
-            hama dan penyakit.</p>
+          <p>Petani jagung di Bojong Hilir salabenda kabupaten Bogor, yang ahli pada bidang tanaman jagung masih terbatas baik dari segi jumlah dan waktu kerja. Dalam menyelesaikan serangan hama dan penyakit yang menyerang tidak sedikit dari petani melakukan kesalahan dalam mengatasi permasalahan yang dihadapi, sehingga produksi jagung yang di panen setiap musimnya banyak mengalami gagal panen karena terserang hama dan penyakit. Jagung merupakan salah satu komoditas unggulan pertanian dari sub sektor tanaman pangan yang multi guna dan bernilai strategis untuk dikembangkan. Pada saat ini, jagung tidak hanya dimanfaatkan untuk bahan pangan (food) saja tetapi juga untuk pakan ternak (feed), dan juga bahan bakar (fuel). Jumlah produksi, produktivitas dan harga jagung selalu mengalami fluktuasi karena pengaruh jumlah permintaan dan penawaran yang selalu berubah ubah. Tingginya permintaan jagung di pasar domestik merupakan salah satu peluang bagi Indonesia untuk menyeimbangkan antara jumlah permintaan dan penawaran jagung. Adapun cara yang dapat ditempuh untuk mewujudkan keseimbangan permintaan dan penawaran jagung domestik adalah dengan memproduksi jagung sendiri di dalam negeri dengan menggunakan sumber daya domestik atau dengan melakukan impor jagung dari negara lain (Maharani,2014).</p>
         </div>
       </div>
     </div>

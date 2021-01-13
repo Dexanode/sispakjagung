@@ -17,6 +17,7 @@ header("location: about.php");
   <script src="Js/jquery-2.2.3.min.js"></script>
   <script src="Js/bootstrap.min.js"></script>
     <script src="js/validator.js"></script>
+    <link rel="stylesheet" href="fontawesome550/css/all.css">
     
 </head>
 <body>
@@ -33,7 +34,7 @@ header("location: about.php");
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="homeadmin.php">BERANDA</a>
+            <a href="homeadmin.php"><i class="fas fa-home"></i></a>
           </li>
           <li>
             <a href="hamadanpenyakit.php">HAMA & PENYAKIT</a>
