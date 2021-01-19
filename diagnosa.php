@@ -72,7 +72,7 @@ header("location: about.php");
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
                        echo  "<br><label>PILIH GEJALA</label><br>";
- 			$tampil="select * from gejala where daerah='Batang' and jenistanaman= \"".$_POST['tanaman']."\"";
+ 			$tampil="select * from gejala where jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
 					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";

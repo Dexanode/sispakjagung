@@ -57,29 +57,15 @@ header("location: about.php");
     <div class="col-sm-12 text-left"> 
           <h2 class="text-center">DAFTAR GEJALA</h2>
       <form id="form1" name="form1" method="post" action="gejala.php">
-				<label for="sel1">Jenis Tanaman</label>            
-				<select class="form-control" name="tanaman" onChange='this.form.submit();'>
-				<option>Tanaman</option>
+        <label for="sel1">Jenis Tanaman</label>            
+        <select class="form-control" name="tanaman" onChange='this.form.submit();'>
+        <option>Tanaman</option>
                 <option>Jagung</option>
-  		</select>
+      </select>
   </form>
 <br>
-<?php
-        $q = esc_field($_GET['q']);
-        $rows = $db->get_results("SELECT * FROM gejala WHERE idgejala LIKE '%$q%' OR namagejala LIKE '%$q%'ORDER BY kode_penyakit");
-            ?>
-<div class="col-md-5 text-left">
-                <div class="input-group m-b">
-                  <input type="text" class="form-control" id="myInput" placeholder="Search Document" name="q" value="<?=$_GET['q']?>">
-                  <span class="input-group-btn">
-                    <!-- <button type="button" href="#addDocuments" data-toggle="modal" class="btn btn-primary"><i class="fa fa-plus fa-fw mr-sm"></i>New Doc</button> -->
-                    <a href="ainputgejala.php"><button type="button" class="btn btn-default">
+<a href="ainputgejala.php"><button type="button" class="btn btn-default">
   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-</button></a>
-                  </span>
-                </div>
-              </div>
-
 </button></a>
     	<br><br>
             <div class="box-body table-responsive">
@@ -95,7 +81,7 @@ header("location: about.php");
                      <?php
 if(isset($_POST['tanaman']))
 if($_POST['tanaman']!="jenistanaman"){	
-$queri="Select * From gejala where jenistanaman = \"".$_POST['tanaman']."\"";
+$queri="Select * From gejala where jenistanaman= \"".$_POST['tanaman']."\"";
 $hasil=mysqli_query ($konek_db,$queri);   
 $id = 0;
 while ($data = mysqli_fetch_array ($hasil)){  
@@ -105,7 +91,6 @@ while ($data = mysqli_fetch_array ($hasil)){
         			<td>".$id."</td>
 				    	<td>".$data[0]."</td>  
         			<td>".$data[1]."</td> 
-                
                     <td><a href=\"aeditgejala.php?id=".$data[0]."\"><i class='glyphicon glyphicon-pencil'></i></a>"." || <a href=\"adeletegejala.php?id=".$data[0]."\"  onclick='return checkDelete()'><i class='glyphicon glyphicon-trash'></i></a>"."</td>
         		</tr>   
         	";      
