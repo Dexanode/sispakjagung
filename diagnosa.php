@@ -75,7 +75,7 @@ header("location: about.php");
  			$tampil="select * from gejala where jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
+					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' />"."&nbsp;"."<strong>"."[".$hasil['idgejala']."]"."</strong>"."&nbsp;".$hasil['gejala']."<br>";
 			}
                   }
 					?>
