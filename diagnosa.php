@@ -71,7 +71,7 @@ header("location: about.php");
       <?php 
             if(isset($_POST['tanaman']))
                   if($_POST['tanaman']!="jenistanaman"){
-                       echo  "<br><label>BATANG</label><br>";
+                       echo  "<br><label>PILIH GEJALA</label><br>";
  			$tampil="select * from gejala where daerah='Batang' and jenistanaman= \"".$_POST['tanaman']."\"";
 			$query= mysqli_query($konek_db,$tampil);
                 while($hasil=mysqli_fetch_array($query)){  
@@ -80,39 +80,7 @@ header("location: about.php");
                   }
 					?>
 
-      <?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
-                     echo  "<br><label>DAUN</label><br>";
- 			$tampil="select * from gejala where daerah='Daun' and jenistanaman= \"".$_POST['tanaman']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>
-      <?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
-                      echo  "<br><label>Tanaman</label><br>";
- 			$tampil="select * from gejala where daerah='Tanaman' and jenistanaman= \"".$_POST['tanaman']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>
-      <?php 
-            if(isset($_POST['tanaman']))
-                  if($_POST['tanaman']!="jenistanaman"){
-                      echo  "<br><label>Kulit</label><br>";
- 			$tampil="select * from gejala where daerah='Kulit' and jenistanaman= \"".$_POST['tanaman']."\"";
-			$query= mysqli_query($konek_db,$tampil);
-                while($hasil=mysqli_fetch_array($query)){  
-					echo "<input type='checkbox' value='".$hasil['gejala']."' name='gejala[]' /> ".$hasil['gejala']."<br>";
-			}
-                  }
-					?>
+      
 
 
       <br>

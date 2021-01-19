@@ -64,8 +64,22 @@ header("location: about.php");
   		</select>
   </form>
 <br>
-<a href="ainputgejala.php"><button type="button" class="btn btn-default">
+<?php
+        $q = esc_field($_GET['q']);
+        $rows = $db->get_results("SELECT * FROM gejala WHERE idgejala LIKE '%$q%' OR namagejala LIKE '%$q%'ORDER BY kode_penyakit");
+            ?>
+<div class="col-md-5 text-left">
+                <div class="input-group m-b">
+                  <input type="text" class="form-control" id="myInput" placeholder="Search Document" name="q" value="<?=$_GET['q']?>">
+                  <span class="input-group-btn">
+                    <!-- <button type="button" href="#addDocuments" data-toggle="modal" class="btn btn-primary"><i class="fa fa-plus fa-fw mr-sm"></i>New Doc</button> -->
+                    <a href="ainputgejala.php"><button type="button" class="btn btn-default">
   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button></a>
+                  </span>
+                </div>
+              </div>
+
 </button></a>
     	<br><br>
             <div class="box-body table-responsive">
@@ -75,7 +89,6 @@ header("location: about.php");
                             <th>NO</th>
                             <th>ID Gejala</th>
 							              <th>Gejala</th>
-                            <th>Daerah</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
@@ -91,8 +104,7 @@ while ($data = mysqli_fetch_array ($hasil)){
         			<tr>  
         			<td>".$id."</td>
 				    	<td>".$data[0]."</td>  
-        			<td>".$data[1]."</td>  
-        			<td>".$data[2]."</td>
+        			<td>".$data[1]."</td> 
                 
                     <td><a href=\"aeditgejala.php?id=".$data[0]."\"><i class='glyphicon glyphicon-pencil'></i></a>"." || <a href=\"adeletegejala.php?id=".$data[0]."\"  onclick='return checkDelete()'><i class='glyphicon glyphicon-trash'></i></a>"."</td>
         		</tr>   

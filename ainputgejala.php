@@ -75,7 +75,7 @@ header("location: about.php");
                     <div class="help-block with-errors" role="alert"></div>
 				</div>
 			</div>
-			<div class="form-group ">
+			<!-- <div class="form-group ">
 				<label class="control-label col-sm-2" for="alamat">Daerah:</label>
 				<div class="col-sm-10">           
 				<select class="form-control" name="daerah"  onChange='this.form.submit();'>
@@ -88,14 +88,13 @@ header("location: about.php");
   		</select>
                     
 				</div>
-			</div>	
+			</div>	 -->
           <div class="form-group ">
 				<label class="control-label col-sm-2" for="alamat">Jenis Tanaman:</label>
 				<div class="col-sm-10">
 					<select class="form-control" name="jenistanaman"  onChange='this.form.submit();'>
 				<option>Tanaman</option>
-                <option>Bawang</option>
-                <option>Cabai</option>
+                <option>Jagung</option>
   		</select>
                     
 				</div>
@@ -105,9 +104,8 @@ header("location: about.php");
                     if(isset($_POST['submit'])){
                     $idgejala     = $_POST['idgejala'];
                     $gejala       = $_POST['gejala'];
-                    $daerah       = $_POST['daerah'];
                     $jenistanaman = $_POST['jenistanaman'];
-                    $query="INSERT INTO gejala SET idgejala='$idgejala',gejala='$gejala',daerah='$daerah',jenistanaman='$jenistanaman'";
+                    $query="INSERT INTO gejala SET idgejala='$idgejala',gejala='$gejala',jenistanaman='$jenistanaman'";
                   $result=mysqli_query($konek_db, $query);
                         if($result){
                             echo '<script language="javascript">';

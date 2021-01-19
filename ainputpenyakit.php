@@ -83,8 +83,7 @@ header("location: about.php");
 				<div class="col-sm-10">           
 				<select class="form-control" name="jenistanaman" onChange='this.form.submit();'>
 				<option>Tanaman</option>
-                <option>Bawang</option>
-                <option>Cabai</option>
+                <option>Jagung</option>
   		        </select>
                     
                     
@@ -92,29 +91,12 @@ header("location: about.php");
 				</div>
 			</div>	
           <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Kultur Teknis:</label>
+				<label class="control-label col-sm-2" for="alamat">Solusi :</label>
 				<div class="col-sm-10">
                     <textarea rows='8' class="form-control" name="kulturteknis"></textarea>
 				</div>
 			</div>
-          <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Fisik Mekanis:</label>
-				<div class="col-sm-10">
-                    <textarea rows='8' class="form-control" name="fisikmekanis"></textarea>
-				</div>
-			</div>
-          <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Kimiawi:</label>
-				<div class="col-sm-10">
-                    <textarea rows='8' class="form-control" name="kimiawi"></textarea>
-				</div>
-			</div>
-          <div class="form-group">
-				<label class="control-label col-sm-2" for="alamat">Hayati:</label>
-				<div class="col-sm-10">
-                    <textarea rows='8' class="form-control" name="hayati"></textarea>
-				</div>
-			</div>
+          
           <button type="submit" name ="submit" class="btn btn-primary">Simpan</button><br>
           <?php		
                     if(isset($_POST['submit'])){

@@ -72,7 +72,6 @@ header("location: about.php");
             <th>NO</th>
             <th>ID Penyakit</th>
             <th>Nama Penyakit</th>
-            <th>Jenis Tanaman</th>
             <th>Detail</th>
           </tr>
         </thead>
@@ -87,9 +86,8 @@ while ($data = mysqli_fetch_array ($hasil)){
  			echo "      
         			<tr>  
         			<td>".$id."</td>
-					<td>".$data[0]."</td>  
-        			<td>".$data[1]."</td>  
-        			<td>".$data[2]."</td>  
+				    	<td>".$data[0]."</td>  
+        			<td>".$data[1]."</td> 
                     <td><a href=\"detailpenyakit.php?id=".$data[0]."\"><i class='glyphicon glyphicon-search'></i></a></td>
         		</tr>   
         	";      
